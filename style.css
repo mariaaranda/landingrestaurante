@@ -1,0 +1,465 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+p {
+    font-size: "Garamond";
+    color: #90909B;
+    font-size: 30px;
+    line-height: 45px;
+
+}
+h1 {
+    font-family: "Garamond" ;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 50px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+h2 {
+    font-family: "Garamond" ;
+    font-size: 40px;
+    color: #47475B;
+    padding-top: 50px;
+    font-weight: 500;
+}
+h3 {
+    font-family: "Garamond" ;
+    font-size: 80px;
+    color: white;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+input {
+    width: 100%;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+select {
+    width: 33%;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+i {
+    color:  #90909B;
+    font-size: 25px;
+    transition: 1s;
+}
+i:hover {
+    color: rgb(84, 82, 82);
+}
+.wrapper {
+    max-width: 90%;
+    margin: auto;
+}
+/* FLEX*/
+.flex {
+    display: flex;
+}
+.jcenter {
+    justify-content: center;
+}
+.acenter {
+    align-items: center;
+}
+.jbetween {
+    justify-content: space-between;
+}
+/* FIN DE FLEX */
+/* CLASES GENERALES */
+.boton {
+    position: relative;
+    margin-top: 100px;
+}
+.bordebtn {
+    border: 1px solid white;
+    display: inline-flex;
+    padding: 15px 60px;
+    justify-content: center;
+    transition: 0.5s;
+    transform: scaleX(0px);
+    position: absolute;
+    width: 30%;
+    height: 60px;
+}
+.bordebtn:hover {
+    transform: scaleX(1.3);
+}
+.textobtn {
+    position: absolute;
+}
+.textobtn a {
+    font-size: 20px;
+    letter-spacing: 3px;    
+}
+.separadorwh {
+    width: 60px;
+    height: thin;
+    color: white;
+    border-style: solid;
+    margin: auto;
+}
+.separadorgr {
+    width: 60px;
+    height: thin;
+    color: #47475B;
+    border-style: solid;
+    margin-bottom: 40px;
+    margin: auto;
+}
+.flecha {
+    transition: 0.5s;
+    transform: translate(0px);
+    display: block;
+    width: 40px;
+    margin: auto;
+    margin-top: 50px;
+}
+.flecha:hover {
+    transform: translateY(20px);
+}
+.next {
+    margin-top: 30px;
+}
+.linea {  
+    border-bottom: 2px solid white;
+    height: 1px;
+    width: 30px;
+    transform-origin: left;
+    transform: skewY(-40deg);
+    transition: 1s;
+}
+.reverse {
+    transform: skewY(40deg);
+}
+.derecha {
+    transform-origin: right;
+}
+.next:hover .linea {
+    transform: rotateX(-5deg);
+}
+/* FIN DE CLASES GENERALES */
+/* HEADER */
+.head {
+    padding: 30px 30px;
+}
+.fondo {
+    background-image: url("img/burguer.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+}
+
+.contacto p {
+    color: white;
+    font-style: italic;
+    line-height: 38px;
+    font-size: "Garamond";
+    font-size: 26px;
+}
+.contacto a:hover {
+    text-decoration: underline;
+}
+.logo {
+    margin-top: 120px;
+    margin-bottom: 50px;
+    width: 1100px;
+
+}
+/* FIN DE HEADER */
+.bienvenido {
+    padding: 115px 115px;
+    flex-direction: column;
+}
+.textobienvenido {
+    text-align: center;
+    padding: 0px 50px;
+}
+.textobienvenido p {
+    padding-top: 20px;
+}
+/* GALERIA */
+.mitad img {
+    flex-direction: column;
+    flex: 1;
+    object-fit: cover;
+    object-position: cover;
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+.mitad {
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+}
+.mitad div {
+    flex: 1;
+    overflow: hidden;
+}
+.mitad:first-child {
+    margin-right: 30px;
+}
+.galeria .mitad:first-child div:first-child {
+    margin-bottom: 30px;
+}
+.galeria:last-child .mitad:last-child {
+    margin-bottom: 0px;
+}
+.mitad > div {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    background-color: rgb(0 0 0/50%);
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-property: opacity;
+}
+.overlay img {
+    flex: initial;
+    width: 8%;
+}
+.overlay a {
+    width: 100%;
+    height: 100%;
+}
+.mitad > div:hover img {
+    transform: scale(1.1);
+}
+.mitad > div:hover .overlay {
+    opacity: 1;
+}
+/* FIN GALERIA */
+.pasion {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.pasion .mitad p {
+    margin-top: 20px;
+}
+.pasion .mitad:first-child {
+    margin-right: 100px;
+}
+.pasion .mitad .separadorgr hr {
+    margin-bottom: 0px;
+}
+/* FLYER */
+.flyer {
+    margin-top: 150px;
+}
+.flyer .mitad {
+    padding: 20px 20px;
+}
+.flyer .mitad img {
+    position: relative;
+}
+.mitad img:first-child {
+    height: 100%;
+}
+.galeriados .mitad:first-child div:first-child {
+    margin-bottom: 0px;
+}
+.info {
+    position: absolute;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px 30px;
+    z-index: 20;
+}
+.info h2 {
+    color: white;
+}
+.info h3 {
+    margin-top: 20px;
+}
+.info p {
+    color: white;
+    padding-top: 30px;
+}
+/* FIN DE FLYER */
+/* MENU */
+.carta {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+.menu {
+    text-align: center;
+}
+.navcomidas span {
+    font-size: "Garamond";
+    color: #90909B;
+    font-size: 20px;
+    line-height: 45px;
+    padding-top: 20px;   
+}
+.navcomidas span:hover {
+    color: black;
+}
+.navcomidas span {
+    cursor: pointer;
+}
+.navcomidas span:not(:last-child) {
+    margin-right: 50px;
+}
+.col:first-child {
+    margin-right: 30px;
+}
+.col h2 {
+    font-size: 30px;
+    text-align: left;
+}
+.col p {
+    font-size: 26px;
+    line-height: 30px;
+    text-align: left;
+    font-style: italic;
+    padding-top: 20px;
+    display: flex;
+}
+.precio {
+    margin: auto;
+    justify-content: space-between;
+}
+.carta .bordebtn {
+    border: 1px solid black;
+}
+.carta .textobtn a {
+    color: black;
+}
+.galeriados .info {
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.galeriados .mitad:last-child h2 {
+    font-size: 36px;
+}
+.galeriados .mitad:last-child h3 {
+    font-size: 60px;
+}
+.galeriados .mitad:last-child div:first-child {
+    margin-bottom: 30px;
+}
+.comidas {
+    display: none;
+}
+.activo {
+    display: block;
+}
+.opciones.activo {
+    color: black;
+}
+
+/* FORMULARIO */
+.reservas {
+    flex-direction: column;
+    margin-top: 150px;
+}
+.reservas h2 {
+    padding-top: 20px;
+    text-align: center;
+}
+.formulario {
+    padding-top: 30px;
+    text-align: center;
+    margin: 0px 280px;
+}
+input::placeholder {
+    font-family: "Georgia";
+    color: #7d7d7d;
+    font-size: 22px;
+    font-style: italic;
+}
+.fechas input {
+    width: 33%;
+}
+.fechas input:not(:last-child) {
+    margin-right: 10px;
+}
+.reservas .btn {
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+}
+.reservas .btn a {
+    color: black;
+}
+/* FIN FORMULARIO */
+/* UBICACIÓN */
+.mapa {
+    margin-top: 150px;
+    text-align: center;
+}
+.mapa iframe {
+    width: 100%;
+}
+/* FIN UBICACIÓN */
+footer {
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+footer .contacto p, footer .contacto a {
+    color: #7d7d7d;
+    text-align: center;
+}
+.legal p {
+    color: #a7a5a5;
+    text-align: center;
+    font-style: italic;
+    font-size: 26px;
+}
+.redes {
+    margin: 10px;
+}
+.redes i:not(:last-child) {
+    margin-right: 10px;
+}
+/* RESPONSIVE */
+@media (max-width: 1280px) {
+    .wrapper {
+        width: 85%;
+    }
+    .mitad {
+        overflow: hidden;
+    }
+}
+@media (max-width: 900px) {
+    
+    .galeria {
+        flex-direction: column;
+    }
+
+    .bienvenido {
+        padding: 0px 0px;
+        margin-bottom: 50px;
+    }
+    .textobienvenido {
+        padding: 0px 0px;
+    }
+    .mitad:first-child {
+        margin-right: 0;
+        margin-bottom: 30px;   
+    }
+    .pasion {
+        flex-direction: column;
+    }
+}
+/* FIN RESPONSIVE */

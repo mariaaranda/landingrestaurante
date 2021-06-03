@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b7c5f970d0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <section class="head">
+        <div class="fondo flex jcenter acenter">
+            <div class="contenido">
+                <div class="contacto">       
+                    <p>28 Jackson Blvd Ste 1020 Chicago IL 60604-2340</p>
+                    <p>Tel: <a href="">800-2345-6789</a></p>
+                </div>
+                <div class="logo flex jbetween">
+                    <div class="next">
+                        <div class="linea"></div>
+                        <div class="linea reverse"></div>
+                    </div>
+                    <a href=""><img src="img/logo.webp" alt=""></a>
+                    <div class="next">
+                        <div class="linea reverse derecha"></div>
+                        <div class="linea derecha"></div>
+                    </div>
+                </div>
+                <hr class="separadorwh jcenter">
+                <h1>EXPERIENCE THE TASTE OF ITALY!</h1>
+                <div class="boton flex jcenter acenter">
+                    <div class="bordebtn">                       
+                    </div>
+                    <div class="textobtn">
+                        <a href="">OUR MENU</a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section class="bienvenido wrapper flex jcenter acenter">
+        <div class="textobienvenido">
+            <hr class="separadorgr">
+            <h2>Welcome!</h2>
+            <p>Our family has been in the restaurant business for a very long time. Nowadays we can proudly boast our reputation for a well known Italian restaurant in our area. We are famous for the fabulous authentic cuisine, professional chef and dedicated staff. Choose any dish from the menu which can help you to experience the real taste of Italy.</p>
+            <a href="#"><img class="flecha" src="img/flechapng.png" alt=""></a>          
+        </div>        
+    </section>
+    <section class="galeria wrapper flex">
+        <div class="mitad flex">
+            <div class="flex">
+                <div class="overlay flex acenter jcenter">
+                    <a class="flex jcenter acenter" href="#">
+                        <img src="img/zoom-icon.webp" alt="">
+                    </a>
+                </div>
+                <img src="img/pepino.jpg" alt="">
+            </div>
+            <div class="flex">
+                <div class="overlay flex acenter jcenter">
+                    <a class="flex jcenter acenter" href="#">
+                        <img src="img/zoom-icon.webp" alt="">
+                    </a>
+                </div>
+                <img src="img/cocina.jpg" alt="">
+            </div>
+        </div>        
+        <div class="mitad flex">
+            <div class="flex">
+                <div class="overlay flex acenter jcenter">
+                    <a class="flex jcenter acenter" href="#">
+                        <img src="img/zoom-icon.webp" alt="">
+                    </a>
+                </div>
+                <img src="img/carne.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="pasion wrapper flex jcenter">
+        <div class="mitad flex">
+            <h2>Our Passion</h2>
+            <p>We want to share our passion for the excellent food and great service. We cook our dishes from the freshest ingredients. We specialize in homemade classic Italian pastas, sauces, soups, desserts and much more in a warm friendly atmosphere.</p>
+        </div>
+        <div class="mitad flex">
+            <h2>History</h2>
+            <p>Our Restaurant was established in May 25, 1987. Since then it has grown to more than 30 restaurants worldwide and plans continue to extend, that is not the end of the story...We have a passion for the Italian way of life and want to share it with people, no matter where they’re from, just good food for everyone.</p>
+        </div>
+    </section>
+    <section>
+        <a href="#"><img class="flecha" src="img/flechapng.png" alt=""></a> 
+    </section>
+    <section class="flyer wrapper flex">
+        <div class="mitad flex">
+            <div class="flex">
+                <a class="flex jcenter acenter" href="#">                        
+                </a>
+                <div class="overlay flex acenter jcenter">
+                </div>               
+                <img src="img/ensalada.jpg" alt="">
+                <div class="info">
+                    <hr class="separadorwh">
+                    <h3>$17</h3>
+                    <h2>ITALIAN STEAK FRIES</h2>
+                    <p>Flash-grilled prime beef steak, served with Italian-spiced skinny fries & crunchy vegetable slaw.</p>
+                </div>
+            </div>
+        </div>
+        <div class="mitad flex">
+            <div class="flex">
+                <div class="overlay flex acenter jcenter">
+                    <a class="flex jcenter acenter" href="#">                        
+                    </a>
+                </div>
+                <img src="img/arroz.jpg" alt="">
+                <div class="info">
+                    <hr class="separadorwh">
+                    <h3>$24</h3>
+                    <h2>FRITO MISTO</h2>
+                    <p>Mixed seasonal flash-fried sustainable fish &amp; shellfish served with chunky Italian tartare sauce &amp; lemon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carta wrapper">
+        <div class="menu">
+            <hr class="separadorgr">
+            <h2>Our Menu</h2>
+            <div class="navcomidas flex jcenter">
+                <span data-menu="desayuno" class="opciones">BREAKFAST</span>
+                <span data-menu="lunch" class="opciones">LUNCHES</span>
+                <span data-menu="cena" class="opciones">DINNERS</span>
+                <span data-menu="postre" class="opciones">DESSERTS</span>
+            </div>
+            <div id="desayuno" class="comidas activo flex">
+                <div class="flex">
+                    <div class="col">
+                        <div class="plato">
+                            <div class="flex precio">
+                            <h2>Roasted heritage carrot</h2>
+                            <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                            <h2>Cobble lane bresaola salad
+                            </h2>
+                            <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                            <h2>Roasted heritage carrot</h2>
+                            <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="plato">
+                            <div class="flex precio">
+                                <h2>Roasted heritage carrot</h2>
+                                <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                                <h2>Roasted heritage carrot</h2>
+                                <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                                <h2>Roasted heritage carrot</h2>
+                                <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="lunch" class="comidas flex">                
+                <div class="flex">
+                    <div class="col">
+                        <div class="plato">
+                            <div class="flex precio">
+                            <h2>Salmon salad</h2>
+                            <h2>$6</h2>
+                            </div>
+                            <p>Flaked hot-smoked salmon with heritage beets, radish, fennel & creamy ricotta, toped with seeded crackerbread, fresh horseradish & green goddess dressing</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                            <h2>Roasted heritage carrot</h2>
+                            <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                            <h2>Roasted heritage carrot</h2>
+                            <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="plato">
+                            <div class="flex precio">
+                                <h2>Roasted heritage carrot</h2>
+                                <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                                <h2>Roasted heritage carrot</h2>
+                                <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                                <h2>Roasted heritage carrot</h2>
+                                <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cena" class="comidas flex">
+                <div class="flex">
+                    <div class="col">
+                        <div class="plato">
+                            <div class="flex precio">
+                            <h2>Artisan Breads</h2>
+                            <h2>$5</h2>
+                            </div>
+                            <p>Freshly baked focaccia, ciabatta, seeded crackerbread, sourdough, grissini, extra virgin olive oil, balsamic & a fantastic sun-dried tomato & olive tapenade</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                            <h2>Roasted heritage carrot</h2>
+                            <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                            <h2>Roasted heritage carrot</h2>
+                            <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="plato">
+                            <div class="flex precio">
+                                <h2>Roasted heritage carrot</h2>
+                                <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                                <h2>Roasted heritage carrot</h2>
+                                <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                                <h2>Roasted heritage carrot</h2>
+                                <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="postre" class="comidas flex">
+                <div class="flex">
+                    <div class="col">
+                        <div class="plato">
+                            <div class="flex precio">
+                            <h2>Cobble lane bresaola salad</h2>
+                            <h2>$6</h2>
+                            </div>
+                            <p>Elegant slices of cured beef, crispy artichoke, Westcombe ricotta, crushed almonds, aged balsamic & garden leaves</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                            <h2>Roasted heritage carrot</h2>
+                            <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                            <h2>Roasted heritage carrot</h2>
+                            <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="plato">
+                            <div class="flex precio">
+                                <h2>Roasted heritage carrot</h2>
+                                <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                                <h2>Roasted heritage carrot</h2>
+                                <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                        <div class="plato">
+                            <div class="flex precio">
+                                <h2>Roasted heritage carrot</h2>
+                                <h2>$13</h2>
+                            </div>
+                            <p>Spiced honey-roasted carrots, marinated feta, avocado, leafy radishes, fennel, mint, toasted seeds & an orange & pomegranate dressing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="boton flex jcenter acenter">
+            <div class="bordebtn">                       
+            </div>
+            <div class="textobtn">
+                <a href="">BOOK A TABLE</a>
+            </div>
+        </div>
+    </section>
+    <section class="galeriados wrapper flex">
+        <div class="mitad flex">
+            <div class="flex">
+                <a class="flex jcenter acenter" href="#">                        
+                </a>
+                <div class="overlay flex acenter jcenter">
+                </div>               
+                <img src="img/tomateburguer.jpg" alt="">
+                <div class="info">
+                    <hr class="separadorwh">
+                    <h3>$17</h3>
+                    <h2>BAKED CRESPELLE</h2>
+                    <p>Spinach, Westcombe ricotta &amp; basil baked in gluten-free buckwheat pancakes with smoked mozzarella, sweet buttery leeks, Sicilian tomato sauce &amp; Parmesan.</p>
+                </div>
+            </div>
+        </div>
+        <div class="mitad flex">
+            <div class="flex jcenter">
+                <div class="overlay flex acenter jcenter">
+                    <a class="flex jcenter acenter" href="#">
+                    </a>
+                </div>
+                <img src="img/pan.jpg" alt="">
+                <div class="info">
+                    <h3>$6</h3>
+                    <h2>GNOCCHI GENOVESE</h2>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="overlay flex acenter jcenter">
+                    <a class="flex jcenter acenter" href="#">
+                    </a>
+                </div>
+                <img src="img/cafe.webp" alt="">
+                <div class="info">
+                    <h3>$3</h3>
+                    <h2>ORANGE BLOSSOM PLANKE CAKE</h2>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <section class="reservas wrapper flex jcenter">
+        <hr class="separadorgr">
+        <h2>Reservations</h2>
+        <div class="formulario jcenter">
+            <form action="">
+                <input placeholder="Your Name:" type="text">
+                <input placeholder="Phone:" type="text">
+                <div class="flex fechas">
+                    <input placeholder="Time:" type="time">
+                    <input placeholder="Date:" type="date">
+                    <select name="guest" id="">
+                        <option value="guest">Guest:</option>
+                        <option value="guest">1</option>
+                        <option value="guest">2</option>
+                        <option value="guest">3</option>
+                        <option value="guest">4</option>
+                        <option value="guest">5</option>
+                        <option value="guest">6</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="boton flex jcenter acenter">
+            <div class="bordebtn">                       
+            </div>
+            <div class="textobtn">
+                <a href="">REQUEST</a>
+            </div>
+        </div>
+    </section>
+    <section class="ubicacion wrapper">
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.6824618279875!2d-87.63115268455888!3d41.87817787922209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cbcd6d5d5e9%3A0xf7e8e6a316171679!2s28%20Jackson%20Blvd%20%231020%2C%20Chicago%2C%20IL%2060604%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1613504476391!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    </section>
+    <footer wrapper flex jcenter>
+    <div class="contacto">       
+        <p>28 Jackson Blvd Ste 1020 Chicago IL 60604-2340</p>
+        <p>Tel: <a href="">800-2345-6789</a></p>
+    </div>
+    <div class="redes flex jcenter">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-youtube"></i>
+    </div>
+    <div class="legal">
+        <p>© 2021 Pesto. All Rights Reserved</p>
+    </div>
+    </footer>
+</body>
+</html>
